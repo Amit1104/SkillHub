@@ -6,6 +6,9 @@ import './App.css';
 // import Myprops from './03_Props/Myprops';
 // import PracticeProp from './03_Props/PracticeProp';
 import Mystyle from './04_style/Mystyle';
+import Mystate from './05_state/Mystate';
+import Practicestate from './05_state/Practicestate';
+import Task from './05_state/Task';
 
 function App() {
   // const parent = e => console.log("parent function executed");
@@ -17,7 +20,10 @@ function App() {
       <h1>Something from Parent</h1>
     </Myprops> */}
     {/* <PracticeProp /> */}
-    <Mystyle />
+    {/* <Mystyle /> */}
+    {/* <Mystate /> */}
+    {/* <Practicestate /> */}
+    <Task />
   </>
 }
 
