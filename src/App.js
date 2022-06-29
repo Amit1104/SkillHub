@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import Input from "./pages/Input";
+import Taskbar from "./pages/Taskbar";
 
 function App() {
+  const data = [
+    { id: "1", task: "task1", desc: "desc1", priority: "high" },
+    { id: "2", task: "task2", desc: "desc2", priority: "medium" },
+    { id: "3", task: "task3", desc: "desc3", priority: "low" },
+    { id: "4", task: "task4", desc: "desc4", priority: "high" }
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Taskbar /> */}
+      <Home todos={data} />
+      {/* <Input /> */}
+    </>
   );
 }
 
